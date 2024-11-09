@@ -1,1 +1,1 @@
-Ini adalah Praktikum 1 Mobile Programming sata
+Ini adalah Praktikum 1 Mobile Programming saya
