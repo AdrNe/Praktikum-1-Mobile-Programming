@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/image_menu"
+            android:text="@string/google_play"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/google_play"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewApp"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/purple"
+            android:text="@string/apps" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewGame"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/green"
+            android:text="@string/games" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewMovie"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/red"
+            android:text="@string/movie" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewMusic"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/orange"
+            android:text="@string/music" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewBook"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/book" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonViewNews"
+            style="@style/ButtonView"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/tosca"
+            android:text="@string/news" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TitleApp"
+            android:text="@string/popular" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonMore1"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/purple"
+            style="@style/MoreButton" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/whatsapp"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsapp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/line"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/telegram"
+                    android:src="@drawable/telegram" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telegram" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/tiktok"
+                    android:src="@drawable/tiktok" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tiktok" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/spotify"
+                    android:src="@drawable/spotify" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spotify" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TitleApp"
+            android:text="@string/games" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonMore2"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_apps"
+            android:backgroundTint="@color/purple"
+            style="@style/MoreButton" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/roblox"
+                    android:src="@drawable/roblox" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roblox" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/hayday"
+                    android:src="@drawable/hayday" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hayday" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/freefire"
+                    android:src="@drawable/freefire" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/freefire" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/uno"
+                    android:src="@drawable/uno" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uno" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/AppSize"
+                    android:contentDescription="@string/pou"
+                    android:src="@drawable/pou" />
+
+                <TextView
+                    style="@style/AppText"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pou" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

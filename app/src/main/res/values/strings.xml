@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Praktikum1</string>
+    <string name="more">MORE</string>
+    <string name="google_play">Google Play</string>
+    <string name="apps">Apps</string>
+    <string name="games">Games</string>
+    <string name="movie">Movies TV</string>
+    <string name="music">Music</string>
+    <string name="book">Books</string>
+    <string name="news">News</string>
+    <string name="popular">Popular Apps</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="line">Line</string>
+    <string name="telegram">Telegram</string>
+    <string name="tiktok">TikTok</string>
+    <string name="spotify">Spotify</string>
+    <string name="roblox">Roblox</string>
+    <string name="hayday">Hay Day</string>
+    <string name="freefire">Free Fire</string>
+    <string name="uno">UNO!</string>
+    <string name="pou">Pou</string>
+</resources>
